@@ -26,24 +26,3 @@ console.log(firstRepeatedId3) // 5
 ```
 
 ¡Ojo! Los elfos dicen que esto es una prueba técnica de Google.
-
-# Solución
-
-Tenemos que encontrar la primer repetición de un arreglo, para esto podemos usar una estructura auxiliar, en mi caso usare un objeto. La idea principal es que en nuestra estructura auxiliar almacenemos si ese número ya esta "visitado" así luego podemos retornar el primero que ya este "visitado" o de lo contrario `-1`.
-
-Ya que solo debemos encontrar el **primero**, usaré find, ya que este solo se ejecuta hasta encontrar un elemento que cumpla la condición, condición que en nuestro caso es que ya exista un valor en la posición de ese número, es decir que ya este visitado.
-
-```js
-let obj = {}
-let res = -1
-
-gifts.find((g) => {
-  if (obj[g]) {
-    res = g
-    return true
-  }
-  obj[g] = true
-})
-```
-
-Hay muchas formas de lograr el -1, pero en mi caso, fue mejor el puntaje realizandolo de esta forma, si nunca encontramos un numero que cumpla la condición, la variable `res` mantiene su valor en -1.

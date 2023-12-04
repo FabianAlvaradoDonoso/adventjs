@@ -1,6 +1,6 @@
 # 🌟 | Advent JS 2023
 
-Repositorio donde estoy subiendo y explicando los retos del Advent JS.
+Repositorio donde estoy subiendo los retos del Advent JS.
 
 # 🎮 | Retos
 
